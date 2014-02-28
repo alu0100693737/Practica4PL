@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Top Down Operator Precedence</title>
+   <link href="global.css" rel="stylesheet" type="text/css">
+   <script src="parse.js"></script>
+   <script src="tokens.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+   <script src="main.js"></script>
+</head>
+
+<body>
+  <h1>Analizador lexico para un subconjunto de JavaScript.</h1>
+  <p>
+    <nav>
+      <a href="http://javascript.crockford.com/tdop/tdop.html" class="mylink">Tutorial original</a>
+      <a href="https://github.com/alu0100693737/Practica4PL" class="mylink">Repositorio GitHub practica</a>
+    </nav>
+  </p>
+  <h2>Input</h2>
+  <p>
+  Introduce en el box de entrada un codigo javascript como en el ejemplo:
+  </p>
+  <textarea id="Entrada">
+     var a = "hello"; // initialize a
+     var b = function(x) {
+             var c = 3;
+               return x+c;
+             };
+  </textarea>
+  <br>
+  <input id="PARSE" value=parse type=button class="mylink">
+  <pre id=OUTPUT></pre>
+</body>
+</html>
