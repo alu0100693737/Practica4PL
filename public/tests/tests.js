@@ -1,6 +1,6 @@
 var assert = chai.assert; 
-suite('Parseador ', function() {
-    test('Parsear Comentarios', function() {
+suite('Analizador Lexico ', function() {
+    test('Analisis de Comentarios', function() {
       var parse = make_parse();
       var source = "/* Comentario */ //Comentario 2";
       var string, tree;
@@ -14,7 +14,7 @@ suite('Parseador ', function() {
       }
       assert.deepEqual(string, "null");
     });
-    test('Parseando Numeros', function() {
+    test('Analisis de Numeros', function() {
       var parse = make_parse();
       var source = "var a = 22234";
       var string, tree;
@@ -26,9 +26,9 @@ suite('Parseador ', function() {
 	  string = JSON.stringify(e, ['name', 'message', 'from', 'to', 'key',
                 'value', 'arity', 'first', 'second', 'third', 'fourth'], 4);
       }
-      assert.deepEqual(string, '{\n    "name": "TypeError",\n    "message": "Object #<Object> has no method \'error\'"\n}');
+      assert.deepEqual(string, '{\n    "name": "TypeError",\n    "message": "token.error is not a function"\n}');
     });
-    test('Parsear Igualdad', function() {
+    test('Analisis de Igualdad', function() {
       var parse = make_parse();
       var source = "var a = \"Hello\";";
       var string, tree;
@@ -42,7 +42,7 @@ suite('Parseador ', function() {
       }
       assert.deepEqual(string, '{\n    "value": "=",\n    "arity": "binary",\n    "first": {\n        "value": "a",\n        "arity": "name"\n    },\n    "second": {\n        "value": "Hello",\n        "arity": "literal"\n    }\n}');
     });
-    test('Parsear Operadores', function() {
+    test('Analisis de Operadores', function() {
       var parse = make_parse();
       var source = "var b = 4 * 8; // asignacion";
       var string, tree;

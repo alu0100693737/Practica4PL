@@ -26,7 +26,7 @@ suite('Parseador ', function() {
 	  string = JSON.stringify(e, ['name', 'message', 'from', 'to', 'key',
                 'value', 'arity', 'first', 'second', 'third', 'fourth'], 4);
       }
-      assert.deepEqual(string, '{\n    "name": "TypeError",\n    "message": "Object #<Object> has no method \'error\'"\n}');
+      assert.deepEqual(string, '{\n    "name": "TypeError",\n    "message": "token.error is not a function"\n}');
     });
     test('Parsear Igualdad', function() {
       var parse = make_parse();
