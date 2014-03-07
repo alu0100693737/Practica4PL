@@ -9,7 +9,7 @@ html *
 #INPUT 
 {
     	width:924px;
-    background-color: #A4A4A4;
+    background-color: #CEE765;
 font-weight:bold;
 font-size:15px;
     color: #000000;
