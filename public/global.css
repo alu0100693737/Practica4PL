@@ -11,7 +11,7 @@ html *
     	width:924px;
     background-color: #A4A4A4;
 font-weight:bold;
-font-size:15px;
+font-size:20px;
     color: #000000;
     padding: 40px 50px;
     text-align: center;
@@ -28,7 +28,7 @@ font: small-caps 120%/200% serif;
 
 font-family: cursive;
 
-color: #A9F5D0;
+color: #A9F5BC;
 
 background: #A9F5D0 url("2.jpg") no-repeat ;
 background-size: cover;
@@ -38,7 +38,7 @@ margin-left: 20%;
 margin-right: 20%; }
 #OUTPUT 
 {
-    background-color: #66FFCC; 
+    background-color: black; 
     width: 80%;
 }
 
@@ -52,7 +52,7 @@ a:link { color:#00FFFF; }
 a:visited { color:black; }
 a:hover{ 
   background-color:black; 
-  color: #FFF;
+  color: black;
 }
 a:active {color:#0000FF;}  /* selected link */
 
